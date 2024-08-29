@@ -9,8 +9,8 @@ public class VariableExample4 {
 		 * 
 		 * 1) 값의 범위가 큰 자료형을 작은 자료형으로 변환할 때 사용
 		 * 2) 출력되는 데이터의 표기법을 변환시키고 싶을 때
-		 * 3) ~~
 		 * 
+		 * * 강제 형변환 방법
 		 * - 자료형을 변환시키고 싶은 값 또는 변수 앞에 (자료형)을 작성
 		 * 
 		 * 
@@ -44,11 +44,21 @@ public class VariableExample4 {
 		int iNum3 = 44085;
 		System.out.println( (char)iNum3 );
 		
+		
 		// 오버플로우 현상은 컴퓨터가 미리 예측할수 없다!
-		// -> 개발자가 미리 생각해야함
+		// -> 개발자가 미리 예측해야함
 		int i6 = 2147483647; // int 의 최대값
 		int result6 = i6 + 1;
-		System.out.println(result6);
+		System.out.println(result6); // -2147483648
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }

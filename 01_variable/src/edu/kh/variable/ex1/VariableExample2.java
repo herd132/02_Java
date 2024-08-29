@@ -4,6 +4,30 @@ public class VariableExample2 {
 
 	public static void main(String[] args) {
 		
+		/* 자바 기본 자료형 8가지
+		 * 
+		 * 논리형 : boolean(1byte)
+		 * 정수형 : byte(1byte), short(2byte), int(4byte), long(8byte)
+		 * 실수형 : float(4byte), double(8byte)
+		 * 문자형 : char(2byte, 유니코드)
+		 * 
+		 * 참조형 - 문자열 String
+		 * 
+		 * 
+		 * */
+		
+		// 변수 선언 : 메모리에 값을 저장할 공간을 할당하는 것
+		// 변수 값 대입 : 변수에 값을 집어 넣는 것.
+		
+		boolean booleanData;
+		// 메모리에 논리값(t/f)을 저장할 공간을 1byte 할당하고
+		// 할당된 공간을 booleanData 라고 부르겠다.
+		
+		booleanData = true; // booleanData 변수에 true 논리값 집어넣기 (대입)
+		
+		System.out.println("booleanData : " + booleanData);
+		
+		
 		
 		
 		byte byteNumber = 127; // 128 넣는 순간 에러
@@ -11,10 +35,11 @@ public class VariableExample2 {
 		// 할당된 공간을 byteNumber 라고 부르겠다
 		// 선언된 byteNumber 변수에 처음으로 127을 넣음.
 		//-> 초기화 : 처음 변수에 값을 대입
+		
 		short shortNumber = 32767;
 		
 		// 정수 자료형 기본형! (short, byte 는 옛날코드 잔재)
-		int intNumber = 2147483647;
+		int intNumber = 2147483647;	
 	// 자료형 변수명 = 리터럴;
 		
 		// 프로그래밍에서 대입되는 이 데이터(값자체)를 리터럴 이라는 단어로도 표현
@@ -26,6 +51,7 @@ public class VariableExample2 {
 		// The literal 10000000000 of type int is out of range
 		// -> 100억이라는 값은 int의 범위를 벗어났다!
 		// 뒤에 L 을 붙여줌으로써 long 자료형인것을 나타냄.
+		
 		
 		float floatNumber = 1.2345f; // F 또는 f
 		// 1.2345 까지만 쓰면 double 자료형으로 인식함
@@ -52,10 +78,12 @@ public class VariableExample2 {
 		System.out.println("ch : " + ch);
 		System.out.println("ch2 : " + ch2);
 		
+		
 		// 변수 명명 규칙
 		
 		// 1. 대소문자 구분, 길이제한 X
-		int abcdefg123456789; // G 다름
+		int abcdefg123456789;
+		int abcdefG123456789; // G 다름
 		
 		// 2. 예약어 사용 X
 		//double final;
@@ -73,6 +101,7 @@ public class VariableExample2 {
 		
 		// 5. 카멜표기법(맨 처음 소문자 시작, 후속 단어 첫글자 대문자)
 		char helloWorldAppleBananaTomato;
+		
 		
 		// 6. 변수명은 언어를 가리지 않음
 		int 정수1번;
@@ -103,7 +132,8 @@ public class VariableExample2 {
 		final int LEFT_MOVE = -1;
 		final int RIGHT_MOVE = 1;
 		
-		System.out.println(1 + 1.3);
+		
+		
 	}
 	
 }
