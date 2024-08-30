@@ -15,7 +15,9 @@ public class PracticeRun { // 기능 실행용 클래스
 		//op.practice1();
 		//op.practice2();
 		//op.practice3();
-		p3.practice1();
+		//p3.practice1();
+		//p3.practice2();
+		p3.practice3();
 	}
 
 }

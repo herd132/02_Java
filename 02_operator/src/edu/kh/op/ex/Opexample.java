@@ -7,6 +7,7 @@ public class Opexample { // 예제 코드 작성용 클래스
 	// ex1() method : 객체 지향 프로그래밍에서 OpExample 객체와 관련된 함수
 	// -> OpExample이 가지고 있는 기능 중 ex1() 이라는 기능
 	public void ex1() {
+		
 		// 증감(증가, 감소) 연산자 : ++ , --
 		
 		int iNum1 = 10;
@@ -34,26 +35,25 @@ public class Opexample { // 예제 코드 작성용 클래스
 		System.out.println(temp2);
 		
 		
-		int a = 3;
-		int b = 5;
+		int a = 3; 
+		int b = 5; 
 		int c = a++ + --b;
 		
 		//		3++ + --5
-		//		3++ =   4
-		//		--5 =   4
-		//      c = 7
+		//		3++ =  +4
+		//	c = 7
+		//      3++ -> 4
+		
 		
 		
 		// 최종적으로 a,b,c는 각각 얼마?
 		System.out.printf("%d / %d / %d\n", a, b, c);
 							// 4 / 4 / 7
 				
-				
-				
-				
-		
+					
 	}
 
+	
 	public void ex2() {
 		// 비교 연산자 : > , < , >= , <= , == , != 
 		// - 비교연산자의 결과는 항상 논리값(true/false)
@@ -74,8 +74,11 @@ public class Opexample { // 예제 코드 작성용 클래스
 		//			  --> false
 		
 		
+		
+		
 	}
 		
+	
 	public void ex3() {
 		// 논리 연산자 : &&(AND) , || (OR)
 		
@@ -101,8 +104,12 @@ public class Opexample { // 예제 코드 작성용 클래스
 		
 		// c는 10을 초과하거나 짝수인가?
 		System.out.println( (c > 10) || (c % 2 == 0) );
+	
+	
+	
 	}
 
+	
 	public void ex4() {
 		// 삼항 연산자 : 조건식 ? true 수행될 값 : false 수행될 값
 		
@@ -129,9 +136,8 @@ public class Opexample { // 예제 코드 작성용 클래스
 		// 정수 입력 : -5
 		// 음수 입니다.
 		
-		
 		Scanner sc = new Scanner(System.in);
-				
+		
 		System.out.printf("정수 입력 : " );
 		
 		int input1 = sc.nextInt();
@@ -141,5 +147,15 @@ public class Opexample { // 예제 코드 작성용 클래스
 		System.out.println(result2);
 		
 		
+		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 // ctrl + shift + o : 파일에서 import 되지 않은 클랙스 모두 import 단축키
 
-
 public class ScannerExample2 {
 	
 	public static void main(String[] args) {

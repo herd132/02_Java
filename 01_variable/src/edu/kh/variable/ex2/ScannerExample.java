@@ -2,7 +2,7 @@ package edu.kh.variable.ex2;
 
 import java.util.Scanner;
 
-// import : 다른 패키지에 존재하는 클랙스를 얻어오는 구문
+// import : 다른 패키지에 존재하는 클래스를 얻어오는 구문
 // import java.util.Scanner : java.util 패키지에서 Scanner Class(설계도) 수입
 
 

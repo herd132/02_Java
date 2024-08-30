@@ -35,7 +35,5 @@ public class VariableExample1 {
 		System.out.println(4 * pi * r * r); // 구의 겉넓이
 		
 		
-	}
-	
-	
+	}	
 }
