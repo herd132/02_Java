@@ -1,4 +1,4 @@
-package edu.kh.oop.practice.model.vo.Book;
+package edu.kh.oop.practice.model.vo;
 
 public class Book {
 	
@@ -61,27 +61,6 @@ public class Book {
 	public String toString() {
 		return title + " / " + price + " / " + discountRate + " / " + author;
 	}
-
-	/*
-	 *  현실 객체 :
-	 *	객체 지향 언어 : 
-	 *	자바 객체 : 
-	 *	class : 
-	 *	new 연산자 : 
-	 * 	추상화 : 
-	 *	캡슐화 : 
-	 *	캡슐화 원칙 :
-	 *	메서드/기능의 '정의'란 : 
-	 *	메서드의 '호출' 이란 :
-	 *	return : 
-		
-	 *	public String ex1() {
-		    return "Hi";
-		}
-		
-	*	위 메서드 상세히 해석 : 
-
-	 */
 	
 	
 	
