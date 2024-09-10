@@ -17,7 +17,6 @@ public class Employee {
 	
 	public Employee(int empNo, String empName, String dept, String job, int age, char gender, int salary,
 			double bonusPoint, String phone, String address) {
-		super();
 		this.empNo = empNo;
 		this.empName = empName;
 		this.dept = dept;
@@ -111,9 +110,8 @@ public class Employee {
 	}
 
 	public String information() {
-		return "Employee [empNo=" + empNo + ", empName=" + empName + ", dept=" + dept + ", job=" + job + ", age=" + age
-				+ ", gender=" + gender + ", salary=" + salary + ", bonusPoint=" + bonusPoint + ", phone=" + phone
-				+ ", address=" + address + "]";
-	}
+		return empNo + ", " + empName + ", " + dept + ", " + job + ", " +
+				age + ", " + gender + ", " + salary + ", " + bonusPoint + ", " +
+				phone + ", " + address;}
 	
 }
