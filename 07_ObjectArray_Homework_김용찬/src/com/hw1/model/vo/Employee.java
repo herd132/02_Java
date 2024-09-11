@@ -14,7 +14,16 @@ public class Employee {
 	private String address;
 	
 	public Employee() {}
-	
+
+	public Employee(int empNo, String empName, int age, char gender, String phone, String address) {
+		this.empNo = empNo;
+		this.empName = empName;
+		this.age = age;
+		this.gender = gender;
+		this.phone = phone;
+		this.address = address;
+	}
+
 	public Employee(int empNo, String empName, String dept, String job, int age, char gender, int salary,
 			double bonusPoint, String phone, String address) {
 		this.empNo = empNo;
@@ -108,10 +117,13 @@ public class Employee {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
+	
 	public String information() {
-		return empNo + ", " + empName + ", " + dept + ", " + job + ", " +
-				age + ", " + gender + ", " + salary + ", " + bonusPoint + ", " +
-				phone + ", " + address;}
+		return empNo + ", " + empName + ", " + dept + ", " + job + ", " + age + ", "
+				+ gender + ", " + salary + ", " + bonusPoint + ", " + phone
+				+ ", " + address;
+	}
+	
+	
 	
 }
