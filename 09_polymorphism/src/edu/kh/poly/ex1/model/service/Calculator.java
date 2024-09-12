@@ -1,7 +1,7 @@
 package edu.kh.poly.ex1.model.service;
 
 // 계산기 인터페이스
-// -> 모든 계산기엔 대한 공통 필드, 기능명을 제공하는 접점(interface)의 용도
+// -> 모든 계산기에 대한 공통 필드, 기능명을 제공하는 접점(interface)의 용도
 public interface Calculator {
 
 	// 인터페이스 : 추상클래스의 변형체 (추상클래스보다 추상도 높음)

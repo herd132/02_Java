@@ -27,6 +27,8 @@ public class AbstractService {
 		p1.breath();
 		p1.move();
 		
+		
+		
 		Fish f1 = new Fish();
 		
 		f1.setType("척추동물 중 어류");

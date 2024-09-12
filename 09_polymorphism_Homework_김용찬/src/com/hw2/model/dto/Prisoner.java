@@ -8,10 +8,11 @@ public class Prisoner extends Person{
 		super(id, name);
 		this.crime = crime;
 	}
+	
 
 	@Override
 	public String getInfo() {
-		return "";
+		return String.format("ID : %s, 죄목 : %s, 직책 : %s", id, name, crime);
 	}
 	
 	

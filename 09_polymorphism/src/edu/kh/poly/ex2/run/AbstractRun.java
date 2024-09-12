@@ -8,7 +8,7 @@ import edu.kh.poly.ex1.model.service.KYCCalculator;
 public class AbstractRun {
 
 	public static void main(String[] args) {
-		new AbstractService().ex2();
+		new AbstractService().ex1();
 	}
 		// ============================================
 		/*

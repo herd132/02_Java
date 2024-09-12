@@ -179,7 +179,7 @@ public class PolyService {
 		
 		System.out.println( ((Tesla)c1).getBatteryCapacity() );
 		// 주의 !
-		// "." dustkswkrk (Tesla) 형변환 연산자보다 우선순위 높음
+		// "." 연산자가 (Tesla) 형변환 연산자보다 우선순위 높음
 		// 그래서 형변환하는 부분을 () 로 한번 묶어주고나서 . 연산을 진행해야
 		// Tesla 객체의 getBatteryCapacity() 를 사용할 수 있음.
 		
