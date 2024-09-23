@@ -25,6 +25,10 @@ public class Run {
 		friends.add(f5);
 		
 		Random random = new Random();
+		int randomindex = random.nextInt(friends.size());
+		
+		Friend leader = friends.get(randomindex);
+		leader.pickLeader();
 		
 		
 
