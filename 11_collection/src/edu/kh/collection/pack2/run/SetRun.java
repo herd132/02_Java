@@ -6,10 +6,10 @@ public class SetRun {
 
 	public static void main(String[] args) {
 		SetService service = new SetService();
-		//service.method1();
-		//service.method2();
+//		service.method1();
+		service.method2();
 		//service.method3();
 		//service.method4();
-		service.lottoNumberGenerator();
+		//service.lottoNumberGenerator();
 	}
 }

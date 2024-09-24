@@ -12,8 +12,4 @@ public class Tiger extends Animal {
 	public void sound() {
 		System.out.println(getName() + "가 어흥하며 포효합니다.");
 	}
-	
-	
-	
-	
 }

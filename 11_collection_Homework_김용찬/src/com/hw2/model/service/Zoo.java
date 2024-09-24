@@ -23,11 +23,9 @@ public class Zoo {
 		}
 	}
 	
-
-	
 public void displayMenu() {
 	
-	int menuNum=0;
+	int menuNum = 0;
 	do {
 		System.out.println("****** KH 동물원 ******");
 		System.out.println("원하는 작업을 선택하세요 : ");
@@ -36,8 +34,7 @@ public void displayMenu() {
 		System.out.print("선택 : ");
 		
 		menuNum = sc.nextInt();
-		
-		
+
 		switch(menuNum) {
 		case 1 :
 			System.out.println("동물들의 울음소리를 들어보세요:");
@@ -48,7 +45,7 @@ public void displayMenu() {
 			System.out.println("프로그램을 종료합니다.");
 			break;
 		}
-	} while(menuNum !=2);
+	} while(menuNum != 2);
 	
 }
 }
