@@ -1,5 +1,6 @@
 package com.hw3.model.dto;
 
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -10,7 +11,7 @@ public class Toy {
 	private int price;
 	private String color;
 	private String manufactureDate;
-	private Set<String>materials;
+	private Set<String>materials; 
 	
 	public Toy() {}
 
@@ -95,10 +96,28 @@ public class Toy {
 
 	@Override
 	public String toString() {
-		return "이름 : " + name + " / 가격 : " + price + " / 색상 : " + color + 
-				" / 사용가능연령 : " + age + " / 제조년월일 : " + manufactureDate + 
-				" / 재료 : " + materials;
+		return "이름 : " + getName() + " / 가격 : " + getPrice() + " / 색상 : " + getColor() + 
+				" / 사용가능연령 : " + getAge() + " / 제조년월일 : " + getManufactureDate() + 
+				" / 재료 : " + materialToString();
 	}
 	
+	// 사이드메서드
+	// toString()의 재료명 문자열 만들어 반환하는 메서드
+	public String materialToString() {
+		// materials -> set 객체
+		// 순회해요
+		// , , 
+		String set = new String();
+		for(String itemNumber : materials) {
+			if(itemNumber != null) {
+	            if (!set.isEmpty()) {
+	                set += ", ";
+	            }
+	            set += itemNumber;
+		}
+	}
+	return set;	
+	
+	}
 	
 }
