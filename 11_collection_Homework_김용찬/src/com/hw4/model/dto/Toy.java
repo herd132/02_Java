@@ -95,28 +95,35 @@ public class Toy {
 
 	@Override
 	public String toString() {
-		return "이름 : " + getName() + " / 가격 : " + getPrice() + " / 색상 : " + getColor() + 
-				" / 사용가능연령 : " + getAge() + " / 제조년월일 : " + getManufactureDate() + 
-				" / 재료 : " + materialToString();
+		return String.format("이름 : %s / 가격 : %d / 색상 : %s / 사용가능연령 : %d "
+				+ "/ 제조년월일 : %s / 재료 : %s",
+				name,price,color,age,manufactureDate,getMaterialsAsString());
 	}
 	
 	// 사이드메서드
 	// toString()의 재료명 문자열 만들어 반환하는 메서드
-	public String materialToString() {
+	public String getMaterialsAsString() {
 		// materials -> set 객체
 		// 순회해요
 		// , , 
-		String set = new String();
-		for(String itemNumber : materials) {
-			if(itemNumber != null) {
-	            if (!set.isEmpty()) {
-	                set += ", ";
-	            }
-	            set += itemNumber;
+		StringBuilder sb = new StringBuilder(); // 가변 문자열 객체
+		
+		if(materials.size() == 0) {
+			return "없음";
+		} 
+		
+		// ex ) [고무, 면직물]
+		// 재료가 있다면 materials 순회하면서 재료 하나하나 , 로 구분하여 문자열 만들기
+		for(String material : materials) {
+			sb.append(material).append(", "); // 문자열 뒤에 이어쓰기	
 		}
-	}
-	return set;	
-	
+		
+		// ex) "고무, 면직물, "
+		
+		// 만들어진 문자열의 마지막 쉼표화 공백 제거하기
+		sb.setLength(sb.length() - 2);	
+		
+		return sb.toString();
 	}
 	
 }
