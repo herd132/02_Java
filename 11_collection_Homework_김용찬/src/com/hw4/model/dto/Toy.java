@@ -1,6 +1,5 @@
-package com.hw3.model.dto;
+package com.hw4.model.dto;
 
-import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 

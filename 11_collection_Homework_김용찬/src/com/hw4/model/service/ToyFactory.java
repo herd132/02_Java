@@ -1,4 +1,4 @@
-package com.hw3.model.service;
+package com.hw4.model.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -14,7 +14,7 @@ import java.util.Set;
 
 import javax.print.DocFlavor.STRING;
 
-import com.hw3.model.dto.Toy;
+import com.hw4.model.dto.Toy;
 
 public class ToyFactory extends Toy {
 
@@ -119,7 +119,7 @@ public class ToyFactory extends Toy {
 
 
 
-	public String addToy(){
+	public void addToy(){
 		
 		System.out.println("<새로운 장난감 추가>");
 		
@@ -150,7 +150,7 @@ public class ToyFactory extends Toy {
 		String materialsNumber = sc.next();
 		
 		if(materialsNumber.equals('q')) {
-			return "새로운 장난감이 추가되었습니다";
+//			return "새로운 장난감이 추가되었습니다";
 		}else if (materialMap.containsKey(materialsNumber) == true){
 			System.out.println("재료가 추가 되었습니다");
 			String material = materialMap.get(materialsNumber);
