@@ -9,7 +9,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.Set;
-
 import com.hw4.model.dto.Toy;
 
 public class ToyFactory {
@@ -23,6 +22,7 @@ public class ToyFactory {
 	// 재료가 저장되어있는 map
 	private Map<Integer, String> materialMap = new HashMap<Integer, String>();
 
+	
 	// 메서드
 	public ToyFactory() { // 기본생성자
 		// 기본 등록된 재료
@@ -30,7 +30,6 @@ public class ToyFactory {
 		materialMap.put(2, "플라스틱");
 		materialMap.put(3, "유리");
 		materialMap.put(4, "고무");
-
 		// 현재 제작된 장난감
 
 		// 1. 일반 배열 사용
@@ -112,6 +111,7 @@ public class ToyFactory {
 				case 3: deleteToy(); break;
 				
 				case 4: displayToysByManufactureDate(); break;
+				
 				case 5: displayToysByAge(); break;
 					
 				case 6:
@@ -155,6 +155,7 @@ public class ToyFactory {
 			index++;
 		}
 	}
+	
 	
 	
 	/** 새로운 장난감 만들기
